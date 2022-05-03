@@ -1,0 +1,33 @@
+name: dice
+grade: stable
+adopt-info: dice
+license: GPL-3.0+
+
+base: core20
+confinement: strict
+
+apps:
+  dice:
+    command: usr/bin/com.github.alexkdeveloper.dice
+    extensions: [gnome-3-38]
+    slots:
+      - dbus-daemon
+    common-id: com.github.alexkdeveloper.dice
+
+parts:
+  dice:
+    plugin: meson
+    source: https://github.com/alexkdeveloper/dice.git
+    source-branch: main
+    meson-parameters: [--prefix=/snap/dice/current/usr]
+    build-packages:
+      - gettext
+    organize:
+      snap/dice/current/usr: usr
+    parse-info: [usr/share/appdata/com.github.alexkdeveloper.dice.appdata.xml]
+
+slots:
+  dbus-daemon:
+    interface: dbus
+    bus: session
+    name: com.github.alexkdeveloper.dice
