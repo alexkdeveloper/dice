@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/com/github/alexkdeveloper/dice">
+    <file>window.ui</file>
+    <file compressed="true">images/1.png</file>
+    <file compressed="true">images/2.png</file>
+    <file compressed="true">images/3.png</file>
+    <file compressed="true">images/4.png</file>
+    <file compressed="true">images/5.png</file>
+    <file compressed="true">images/6.png</file>
+  </gresource>
+</gresources>

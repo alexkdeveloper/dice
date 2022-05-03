@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Dice
+Comment=Dice game
+Exec=com.github.alexkdeveloper.dice
+Icon=com.github.alexkdeveloper.dice
+Terminal=false
+Type=Application
+Categories=GTK;Game;
+StartupNotify=true

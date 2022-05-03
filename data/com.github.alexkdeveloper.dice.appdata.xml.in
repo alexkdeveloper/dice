@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+	<id>com.github.alexkdeveloper.dice</id>
+	<metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <name>Dice</name>
+  <summary>A simple dice game</summary>
+  <description>
+    <p>A simple dice game. In the application, you can choose the number of dice from 1 to 6. The program also shows the total number of points.</p>
+  </description>
+  <provides>
+    <binary>com.github.alexkdeveloper.dice</binary>
+  </provides>
+  <developer_name>Alex Kryuchkov</developer_name>
+  <url type="homepage">http://github.com/alexkdeveloper/dice</url>
+  <url type="bugtracker">http://github.com/alexkdeveloper/dice/issues</url>
+  <url type="help">http://github.com/alexkdeveloper/dice/issues</url>
+  <url type="donation">https://www.blockchain.com/btc/address/bc1ql3ga4w9jtmxfe3pt8vfzydfd3zfpzks8hu5qfu</url>
+  <screenshots>
+    <screenshot type="default">
+    <image>https://raw.githubusercontent.com/alexkdeveloper/dice/main/data/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="1.0.0" date="2022-05-03">
+      <description>
+      <ul>
+        <li>Initial release</li>
+      </ul>
+      </description>
+    </release>
+  </releases>
+</component>
