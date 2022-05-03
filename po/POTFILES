@@ -1,0 +1,7 @@
+data/com.github.alexkdeveloper.dice.desktop.in
+data/com.github.alexkdeveloper.dice.appdata.xml.in
+data/com.github.alexkdeveloper.dice.gschema.xml
+src/window.ui
+src/main.vala
+src/window.vala
+
