@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.38.2 -->
+<!-- Generated with glade 3.39.0 -->
 <interface>
   <requires lib="gtk+" version="3.24"/>
   <object class="GtkListStore" id="liststore1">
@@ -69,7 +69,7 @@
               <object class="GtkImage" id="dice_1">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="stock">gtk-missing-image</property>
+                <property name="icon-name">image-missing</property>
               </object>
               <packing>
                 <property name="left-attach">0</property>
@@ -80,7 +80,7 @@
               <object class="GtkImage" id="dice_2">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="stock">gtk-missing-image</property>
+                <property name="icon-name">image-missing</property>
               </object>
               <packing>
                 <property name="left-attach">1</property>
@@ -91,7 +91,7 @@
               <object class="GtkImage" id="dice_3">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="stock">gtk-missing-image</property>
+                <property name="icon-name">image-missing</property>
               </object>
               <packing>
                 <property name="left-attach">2</property>
@@ -102,7 +102,7 @@
               <object class="GtkImage" id="dice_4">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="stock">gtk-missing-image</property>
+                <property name="icon-name">image-missing</property>
               </object>
               <packing>
                 <property name="left-attach">0</property>
@@ -113,7 +113,7 @@
               <object class="GtkImage" id="dice_5">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="stock">gtk-missing-image</property>
+                <property name="icon-name">image-missing</property>
               </object>
               <packing>
                 <property name="left-attach">1</property>
@@ -124,7 +124,7 @@
               <object class="GtkImage" id="dice_6">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="stock">gtk-missing-image</property>
+                <property name="icon-name">image-missing</property>
               </object>
               <packing>
                 <property name="left-attach">2</property>

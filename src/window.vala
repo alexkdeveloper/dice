@@ -48,7 +48,7 @@ namespace Dice {
 			amount = 0;
 			dice_reset();
 			for (var i = 0; i<combobox.get_active()+1; i++){
-				set_dice(i);
+			      set_dice(i);
 			}
 			sum.set_text(amount.to_string());
 		}
