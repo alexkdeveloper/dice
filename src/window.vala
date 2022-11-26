@@ -18,11 +18,11 @@
 
 namespace Dice {
 	[GtkTemplate (ui = "/com/github/alexkdeveloper/dice/window.ui")]
-	public class Window : Gtk.ApplicationWindow {
+	public class Window : Adw.ApplicationWindow {
 		[GtkChild]
 		private unowned Gtk.Label sum;
 		[GtkChild]
-		private unowned Gtk.ComboBox combobox;
+		private unowned Gtk.ComboBoxText combobox;
 		[GtkChild]
 		private unowned Gtk.Button play_button;
 		[GtkChild]
@@ -39,9 +39,10 @@ namespace Dice {
 		private unowned Gtk.Image dice_6;
 		private int amount;
 
-		public Window (Gtk.Application app) {
+		public Window (Adw.Application app) {
 			Object (application: app);
 			play_button.clicked.connect (generate_dice);
+            combobox.set_active(0);
 			generate_dice();
 		}
         private void generate_dice(){

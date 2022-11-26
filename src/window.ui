@@ -1,178 +1,128 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.39.0 -->
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.10.3 -->
 <interface>
-  <requires lib="gtk+" version="3.24"/>
-  <object class="GtkListStore" id="liststore1">
-    <columns>
-      <!-- column-name dice -->
-      <column type="gchararray"/>
-    </columns>
-    <data>
-      <row>
-        <col id="0" translatable="yes">1 dice</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">2 dice</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">3 dice</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">4 dice</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">5 dice</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">6 dice</col>
-      </row>
-    </data>
-  </object>
-  <template class="DiceWindow" parent="GtkApplicationWindow">
-    <property name="can-focus">False</property>
+  <!-- interface-name window.ui -->
+  <template class="DiceWindow" parent="AdwApplicationWindow">
     <property name="default-width">600</property>
     <property name="default-height">300</property>
     <child>
       <object class="GtkBox">
-        <property name="visible">True</property>
-        <property name="can-focus">False</property>
-        <property name="margin-start">6</property>
-        <property name="margin-end">6</property>
-        <property name="margin-top">6</property>
-        <property name="margin-bottom">6</property>
         <property name="orientation">vertical</property>
-        <property name="spacing">12</property>
         <child>
-          <object class="GtkLabel" id="sum">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <attributes>
-              <attribute name="font-desc" value="Sans Bold 30"/>
-            </attributes>
+          <object class="AdwHeaderBar">
+             <property name="title-widget">
+              <object class="AdwWindowTitle">
+                <property name="title" translatable="yes">Dice</property>
+              </object>
+            </property>
+            <child>
+              <object class="GtkComboBoxText" id="combobox">
+                <items>
+                  <item translatable="yes">1 dice</item>
+                  <item translatable="yes">2 dice</item>
+                  <item translatable="yes">3 dice</item>
+                  <item translatable="yes">4 dice</item>
+                  <item translatable="yes">5 dice</item>
+                  <item translatable="yes">6 dice</item>
+                </items>
+              </object>
+            </child>
+            <child type="end">
+              <object class="GtkButton" id="play_button">
+               <property name="label" translatable="yes">Make a roll of the dice!</property>
+              </object>
+            </child>
           </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="fill">True</property>
-            <property name="position">0</property>
-          </packing>
         </child>
         <child>
-          <!-- n-columns=3 n-rows=2 -->
-          <object class="GtkGrid">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="row-spacing">12</property>
-            <property name="column-spacing">12</property>
-            <property name="row-homogeneous">True</property>
-            <property name="column-homogeneous">True</property>
+          <object class="GtkBox">
+            <property name="margin-bottom">6</property>
+            <property name="margin-end">6</property>
+            <property name="margin-start">6</property>
+            <property name="margin-top">6</property>
+            <property name="orientation">vertical</property>
+            <property name="spacing">12</property>
             <child>
-              <object class="GtkImage" id="dice_1">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="icon-name">image-missing</property>
+              <object class="GtkLabel" id="sum">
+               <style>
+                  <class name="title-1"/>
+               </style>
               </object>
-              <packing>
-                <property name="left-attach">0</property>
-                <property name="top-attach">0</property>
-              </packing>
             </child>
             <child>
-              <object class="GtkImage" id="dice_2">
-                <property name="visible">True</property>
+              <object class="GtkGrid">
                 <property name="can-focus">False</property>
-                <property name="icon-name">image-missing</property>
+                <property name="column-homogeneous">True</property>
+                <property name="column-spacing">12</property>
+                <property name="hexpand">True</property>
+                <property name="row-homogeneous">True</property>
+                <property name="row-spacing">12</property>
+                <property name="vexpand">True</property>
+                <child>
+                  <object class="GtkImage" id="dice_1">
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="column-span">1</property>
+                      <property name="row">0</property>
+                      <property name="row-span">1</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkImage" id="dice_2">
+                    <layout>
+                      <property name="column">1</property>
+                      <property name="column-span">1</property>
+                      <property name="row">0</property>
+                      <property name="row-span">1</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkImage" id="dice_3">
+                    <layout>
+                      <property name="column">2</property>
+                      <property name="column-span">1</property>
+                      <property name="row">0</property>
+                      <property name="row-span">1</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkImage" id="dice_4">
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="column-span">1</property>
+                      <property name="row">1</property>
+                      <property name="row-span">1</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkImage" id="dice_5">
+                    <layout>
+                      <property name="column">1</property>
+                      <property name="column-span">1</property>
+                      <property name="row">1</property>
+                      <property name="row-span">1</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkImage" id="dice_6">
+                    <layout>
+                      <property name="column">2</property>
+                      <property name="column-span">1</property>
+                      <property name="row">1</property>
+                      <property name="row-span">1</property>
+                    </layout>
+                  </object>
+                </child>
               </object>
-              <packing>
-                <property name="left-attach">1</property>
-                <property name="top-attach">0</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkImage" id="dice_3">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="icon-name">image-missing</property>
-              </object>
-              <packing>
-                <property name="left-attach">2</property>
-                <property name="top-attach">0</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkImage" id="dice_4">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="icon-name">image-missing</property>
-              </object>
-              <packing>
-                <property name="left-attach">0</property>
-                <property name="top-attach">1</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkImage" id="dice_5">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="icon-name">image-missing</property>
-              </object>
-              <packing>
-                <property name="left-attach">1</property>
-                <property name="top-attach">1</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkImage" id="dice_6">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="icon-name">image-missing</property>
-              </object>
-              <packing>
-                <property name="left-attach">2</property>
-                <property name="top-attach">1</property>
-              </packing>
             </child>
           </object>
-          <packing>
-            <property name="expand">True</property>
-            <property name="fill">True</property>
-            <property name="position">1</property>
-          </packing>
         </child>
       </object>
     </child>
-    <child type="titlebar">
-      <object class="GtkHeaderBar" id="header_bar">
-        <property name="visible">True</property>
-        <property name="can-focus">False</property>
-        <property name="title">Dice</property>
-        <property name="show-close-button">True</property>
-        <child>
-          <object class="GtkComboBox" id="combobox">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="model">liststore1</property>
-            <property name="active">0</property>
-            <child>
-              <object class="GtkCellRendererText"/>
-              <attributes>
-                <attribute name="text">0</attribute>
-              </attributes>
-            </child>
-          </object>
-        </child>
-        <child>
-          <object class="GtkButton" id="play_button">
-            <property name="label" translatable="yes">Make a roll of the dice!</property>
-            <property name="visible">True</property>
-            <property name="can-focus">True</property>
-            <property name="receives-default">True</property>
-          </object>
-          <packing>
-            <property name="pack-type">end</property>
-            <property name="position">1</property>
-          </packing>
-        </child>
-      </object>
-    </child>
-  </template>
+</template>
 </interface>
