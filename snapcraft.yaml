@@ -3,13 +3,13 @@ grade: stable
 adopt-info: dice
 license: GPL-3.0+
 
-base: core20
+base: core22
 confinement: strict
 
 apps:
   dice:
     command: usr/bin/com.github.alexkdeveloper.dice
-    extensions: [gnome-3-38]
+    extensions: [gnome]
     slots:
       - dbus-daemon
     common-id: com.github.alexkdeveloper.dice
