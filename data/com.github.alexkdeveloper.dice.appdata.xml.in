@@ -22,6 +22,13 @@
   </screenshots>
   <content_rating type="oars-1.1"/>
   <releases>
+    <release version="1.0.6" date="2023-02-25">
+      <description>
+      <ul>
+        <li>Added Dutch translation</li>
+      </ul>
+      </description>
+    </release>
     <release version="1.0.5" date="2022-11-26">
       <description>
       <ul>
