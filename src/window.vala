@@ -22,7 +22,7 @@ namespace Dice {
 		[GtkChild]
 		private unowned Gtk.Label sum;
 		[GtkChild]
-		private unowned Gtk.ComboBoxText combobox;
+		private unowned Gtk.DropDown drop_down;
 		[GtkChild]
 		private unowned Gtk.Button play_button;
 		[GtkChild]
@@ -42,13 +42,12 @@ namespace Dice {
 		public Window (Adw.Application app) {
 			Object (application: app);
 			play_button.clicked.connect (generate_dice);
-            combobox.set_active(0);
 			generate_dice();
 		}
         private void generate_dice(){
 			amount = 0;
 			dice_reset();
-			for (var i = 0; i<combobox.get_active()+1; i++){
+			for (var i = 0; i<drop_down.get_selected()+1; i++){
 			      set_dice(i);
 			}
 			sum.set_text(amount.to_string());

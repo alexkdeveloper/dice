@@ -16,15 +16,19 @@
               </object>
             </property>
             <child>
-              <object class="GtkComboBoxText" id="combobox">
-                <items>
-                  <item translatable="yes">1 dice</item>
-                  <item translatable="yes">2 dice</item>
-                  <item translatable="yes">3 dice</item>
-                  <item translatable="yes">4 dice</item>
-                  <item translatable="yes">5 dice</item>
-                  <item translatable="yes">6 dice</item>
-                </items>
+              <object class="GtkDropDown" id="drop_down">
+                <property name="model">
+                  <object class="GtkStringList">
+                    <items>
+                      <item translatable="yes">1 dice</item>
+                      <item translatable="yes">2 dice</item>
+                      <item translatable="yes">3 dice</item>
+                      <item translatable="yes">4 dice</item>
+                      <item translatable="yes">5 dice</item>
+                      <item translatable="yes">6 dice</item>
+                    </items>
+                  </object>
+                </property>
               </object>
             </child>
             <child type="end">
